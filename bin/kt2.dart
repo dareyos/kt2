@@ -9,8 +9,8 @@ void main(List<String> arguments) async{
   var response = await client.get(url);
   GetProd data = GetProd.fromJson(response.data);
 
-  List<Cars> carsMassive = data.cars;
-  double min = 1000000.0;
+  List<Cars> carsMassive = data.cars; // массив объектов
+  double min = 10000.0; // минимальное значение
   int idi = 0;
   for (var el in carsMassive) {
     String str = el.price;
