@@ -21,5 +21,4 @@ void main(List<String> arguments) async{
   } 
 
   print(idi);
-  print(min);
 }
